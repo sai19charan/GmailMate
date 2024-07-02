@@ -1,0 +1,29 @@
+{
+    "name":"GmailBot",
+    "version":"1.0.0",
+    "description":"This is an extension which connects chatgpt with Gmail",
+    "manifest_version":3,
+    "permissions": [
+        "storage","tabs","activeTab"
+    ],
+    "action":{
+        "default_popup":"index.html"
+    },
+    "content_scripts":[
+        {
+            "matches":["https://mail.google.com/*"],
+            "js":["gmail.js"]
+        },
+        {
+            "matches":["https://chatgpt.com/*"],
+            "js":["gpt.js"]
+        }
+    ],
+    "background":{
+        "service_worker":"background.js"
+    },
+    "host_permissions":[
+        "https://mail.google.com/*",
+        "https://chatgpt.com/*"
+    ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GmailBot</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>GmailBot</h1>
+    <form>
+        <label for="response">Choose way of responding to email</label>
+        <select name="response" id="response">
+          <option value="Friendly">Friendly</option>
+          <option value="Business">Business</option>
+          <option value="Professional">Professional</option>
+          <option value="Authoritative">Authoritative</option>
+          <option value="Casual">Casual</option>
+          <option value="Personal">Personal</option>
+          <option value="Serious">Serious</option>
+          <option value="Lighthearted">Lighthearted</option>
+        </select>
+        <br><br>
+        <button id="save" class="save-button">Save Options</button>
+    </form>
+    
+    <div class="button-container">
+        <button id="reviewButton" class="review-button">Review Email</button>
+        <button id="selected" class="review-button">Reply to Selected mails</button>
+    </div>
+    
+    <label for="signoff">Signature Block</label>
+    <textarea id="signoff" rows="4" cols="50"></textarea>
+    <script src="index.js"></script>
+</body>
+</html>
