@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>GmailBot</h1>
+    <h1>GmailMate</h1>
     <form>
         <label for="response">Choose way of responding to email</label>
         <select name="response" id="response">
@@ -21,16 +21,21 @@
           <option value="Lighthearted">Lighthearted</option>
         </select>
         <br><br>
-        <button id="save" class="save-button">Save Options</button>
+        <button id="save" class="save-button">Save Way of Response</button>
     </form>
     
     <div class="button-container">
+        <button id="reply" class="review-button">Reply</button>
         <button id="reviewButton" class="review-button">Review Email</button>
         <button id="selected" class="review-button">Reply to Selected mails</button>
     </div>
     
     <label for="signoff">Signature Block</label>
-    <textarea id="signoff" rows="4" cols="50"></textarea>
+    <textarea id="signoff" rows="4" cols="50" spellcheck="false"></textarea>
+    <button id="sign">Save Signature</button>
     <script src="index.js"></script>
+    
 </body>
-</html>
+</html> 
+
+

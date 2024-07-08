@@ -1,5 +1,5 @@
 {
-    "name":"GmailBot",
+    "name":"GmailMate",
     "version":"1.0.0",
     "description":"This is an extension which connects chatgpt with Gmail",
     "manifest_version":3,
@@ -7,8 +7,18 @@
         "storage","tabs","activeTab"
     ],
     "action":{
+        "default_icon": {              
+            "16": "images/icon16_n.png",  
+            "48": "images/icon48.png",   
+            "128": "images/icon128.png"    
+        },
         "default_popup":"index.html"
     },
+    "icons": {
+        "16": "images/icon16_n.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      },
     "content_scripts":[
         {
             "matches":["https://mail.google.com/*"],
@@ -16,7 +26,8 @@
         },
         {
             "matches":["https://chatgpt.com/*"],
-            "js":["gpt.js"]
+            "js":["gpt.js"],
+            "run_at": "document_idle"
         }
     ],
     "background":{

@@ -1,10 +1,18 @@
+
+html{
+    max-height:350px;
+    overflow-y: scroll;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    max-height:350px;
     width:400px;
     margin: 0;
     padding: 20px;
     text-align: center;
+    overflow-y: scroll;
 }
 
 h1 {
@@ -34,6 +42,7 @@ select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .button-container {
@@ -61,3 +70,8 @@ textarea {
     resize: vertical; 
     overflow-y: scroll; 
 }
+
+#selected{
+    margin-bottom: 10px;
+}
+
